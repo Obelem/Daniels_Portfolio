@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,700&display=swap');
+
 
 :root {
   --primaryHeaderColor: #D3B1C2;
   --secondaryHeaderColor: #211522;
   --tertiaryHeaderColor: #613659;
+
+
+  --headerFontFamily: 'Space Mono', monospace;
 }
 
 /* Common Styles */
@@ -1145,12 +1150,14 @@ body {
 
 .side .title {
   /* color: white; */
-  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
   font-size: clamp(5rem, 10vw + .8rem, 10rem);
   margin: 0px 10vw;
   /* border: 1px solid brown; */
   width: 80vw;
   text-align: center;
+
+  font-family: var(--headerFontFamily);
 }
 
 #left-side {
