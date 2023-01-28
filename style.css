@@ -1130,7 +1130,8 @@ body {
 }
 
 .side {
-  height: max(100vh, 80rem);
+  height: min(100vh, 65rem);
+  /* height: 70rem; */
   width: 100%;
 
   display: grid;
