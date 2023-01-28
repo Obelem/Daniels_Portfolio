@@ -1130,7 +1130,7 @@ body {
 }
 
 .side {
-  height: min(100vh, 80rem);
+  height: min(100vh, 100rem);
   /* height: 70rem; */
   width: 100%;
 
