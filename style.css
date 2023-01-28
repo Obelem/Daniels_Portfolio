@@ -10,7 +10,7 @@
 
 
   /* --headerFontFamily: 'Space Mono', monospace; */
-  --headerFontFamily: 'Fira Mono', monospace;;
+  --headerFontFamily: 'Fira Mono', monospace;
 }
 
 /* Common Styles */
@@ -1150,12 +1150,10 @@ body {
 }
 
 .side .title {
-  /* color: white; */
-  /* font-family: 'Rubik', sans-serif; */
   font-size: clamp(5rem, 10vw + .8rem, 10rem);
   margin: 0px 5vw;
   /* border: 1px solid brown; */
-  width: 90vw;
+  /* width: 90vw; */
   text-align: center;
 
   font-family: var(--headerFontFamily);
