@@ -522,3 +522,28 @@ const handleOnMove = e => {
 document.onmousemove = e => handleOnMove(e);
 
 document.ontouchmove = e => handleOnMove(e.touches[0]);
+
+const intros = document.querySelectorAll('.title');
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const rightIntro = document.querySelector('#right-side > .title')
+const leftIntro = document.querySelector('#left-side > .title')
+
+window.onload = event => {
+  let iterations = 0;
+
+  const interval = setInterval(() => {
+    intros.forEach(intro => {
+      intro.innerText = intro.innerText.split("")
+      .map(letter => letters[Math.floor(Math.random() * 26)])
+      .join("");
+    });
+
+    if (iterations >= 9) {
+      clearInterval(interval);
+      rightIntro.innerHTML = `<h2 class="title" data-value="Engr.  Daniel">Engr.  <span class="fancy">Daniel</span></h2>`;
+      leftIntro.innerHTML = `<h2 class="title" data-value="Hi, I'm Daniel">Hi, I'm <span class="fancy">Daniel</span></h2>`;
+    }
+
+    iterations += 1;
+  }, 50);
+}
