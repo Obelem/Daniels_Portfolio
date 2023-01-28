@@ -1126,11 +1126,13 @@ body {
 /* hover header design */
 #section1 {
   /* position: relative; */
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .side {
-  min-height: 100%;
+  height: 100vh;
+  max-height: 80rem;
+  min-height: 50rem;
   width: 100%;
 
   display: grid;
