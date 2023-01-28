@@ -512,6 +512,7 @@ form.addEventListener("submit", (e) => {
 
 
 const left = document.getElementById('left-side');
+const sectionOne = document.getElementById('section1');
 
 const handleOnMove = e => {
   const p = e.clientX / window.innerWidth * 100;
@@ -519,7 +520,10 @@ const handleOnMove = e => {
   left.style.width = `${p}%`;
 }
 
-document.onmousemove = e => handleOnMove(e);
+document.onmousemove = e => {
+  if (e.target == sectionOne || sectionOne.contains(e.target))
+  handleOnMove(e);
+};
 
 document.ontouchmove = e => handleOnMove(e.touches[0]);
 
