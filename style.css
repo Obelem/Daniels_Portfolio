@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --primaryHeaderColor: #D3B1C2;
+  --secondaryHeaderColor: #211522;
+  --tertiaryHeaderColor: #613659;
+}
+
 /* Common Styles */
 * {
   margin: 0;
@@ -1086,7 +1092,7 @@ html {
 /* End of Responsive */
 
 
-/* custom */
+/* Jesse's additions */
 #section-2 {
   display: none;
 }
@@ -1115,16 +1121,75 @@ body {
   background-color: #fff;
 }
 
-#menu {
-  /* border: 1px solid white; */
+
+
+/* hover header design */
+#section1 {
+  /* position: relative; */
+  min-height: 100vh;
+}
+
+.side {
+  min-height: 100%;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+
+  overflow: hidden;
+  position: absolute;
+}
+
+.side .title {
+  /* color: white; */
+  font-family: 'Rubik', sans-serif;
+  font-size: 8vw;
+  margin: 0px 15vw;
+  width: 70vw;
+}
+
+#left-side {
+  
+  background-color: var(--secondaryHeaderColor);
+  z-index: 2;
+}
+
+#left-side .title {
+  color:  white;
+}
+
+#left-side .fancy {
+  color: var(--primaryHeaderColor)
+}
+
+#right-side {
+  background-color: var(--primaryHeaderColor);
+}
+
+#right-side .fancy {
+  color: var(--secondaryHeaderColor);
+}
+
+#right-side .title {
+  color: var(--tertiaryHeaderColor);
+}
+
+
+
+
+
+
+
+/* scroll effect header design */
+
+/* #menu {
+  border: 1px solid white;
   background-color: rgb(20, 20, 20);
   height: 100vh;
   display: flex;
   align-items: center;
 
-  
-}
-
+} */
 .menu-item {
   color: white;
   font-size: clamp(3rem, 8vw + .2rem, 8rem);

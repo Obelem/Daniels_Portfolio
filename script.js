@@ -501,11 +501,24 @@ form.addEventListener("submit", (e) => {
 
 
 // my additions
-const menu = document.getElementById('menu');
+// const menu = document.getElementById('menu');
 
-Array.from(document.getElementsByClassName('menu-item'))
-.forEach((item, index) => {
-  item.onmouseover = () => {
-    menu.dataset.activeIndex = index;
-  }
-})
+// Array.from(document.getElementsByClassName('menu-item'))
+// .forEach((item, index) => {
+//   item.onmouseover = () => {
+//     menu.dataset.activeIndex = index;
+//   }
+// })
+
+
+const left = document.getElementById('left-side');
+
+const handleOnMove = e => {
+  const p = e.clientX / window.innerWidth * 100;
+
+  left.style.width = `${p}%`;
+}
+
+document.onmousemove = e => handleOnMove(e);
+
+document.ontouchmove = e => handleOnMove(e.touches[0]);
