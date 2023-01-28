@@ -1130,7 +1130,7 @@ body {
 }
 
 .side {
-  height: clamp(50rem, 100vh, 80rem);
+  height: clamp(50rem, 100vh, 100rem);
   width: 100%;
 
   display: grid;
