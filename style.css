@@ -1130,9 +1130,7 @@ body {
 }
 
 .side {
-  height: 100vh;
-  max-height: 80rem;
-  min-height: 50rem;
+  height: clamp(50rem, 100vh, 80rem);
   width: 100%;
 
   display: grid;
