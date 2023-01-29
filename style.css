@@ -1150,7 +1150,7 @@ body {
 
 /* hover header design */
 #section-1 {
-  height: min(100vh, 95rem);
+  height: min(100vh, 100rem);
   position: relative;
 }
 
