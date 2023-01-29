@@ -7,6 +7,7 @@
   --primaryHeaderColor: #D3B1C2;
   --secondaryHeaderColor: #211522;
   --tertiaryHeaderColor: #613659;
+  --lightTertiaryHeaderColor: #94648c;
 
 
   /* --headerFontFamily: 'Space Mono', monospace; */
@@ -347,7 +348,7 @@ html {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: var(--tertiaryHeaderColor);
+  background-color: var(--lightTertiaryHeaderColor);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
