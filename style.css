@@ -1152,7 +1152,7 @@ body {
 #section-1 {
   height: 100vh;
   max-height: 80rem;
-  min-height: 60rem;
+  /* min-height: 60rem; */
   /* outline: 2px solid red; */
 }
 
