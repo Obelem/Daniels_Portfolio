@@ -512,7 +512,7 @@ form.addEventListener("submit", (e) => {
 
 
 const left = document.getElementById('left-side');
-const sectionOne = document.getElementById('section1');
+const sectionOne = document.getElementById('section-1');
 
 const handleOnMove = e => {
   const p = e.clientX / window.innerWidth * 100;

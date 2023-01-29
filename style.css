@@ -332,6 +332,31 @@ html {
   transform: translateX(10rem);
 }
 
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  /* color: #0087ca; */
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--tertiaryHeaderColor);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 /* End of Navbar */
 /* End of Navigation */
 
@@ -1104,7 +1129,7 @@ html {
   background-color: gray;
 }
 
-.main-circle, .navbar, .main-btn, .featured-text, 
+.main-circle, .main-btn, .featured-text, 
 .page-bg {
   display: none;
 }
@@ -1123,11 +1148,11 @@ body {
 
 
 /* hover header design */
-#section1 {
+#section-1 {
   /* position: relative; */
   height: 100vh;
 
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 .side {
