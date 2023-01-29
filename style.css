@@ -537,7 +537,6 @@ html {
   width: 100%;
   height: 100%;
   padding: 10rem 0;
-  margin-top: 10rem;
   position: relative;
 }
 
@@ -1143,21 +1142,23 @@ body {
 }
 
 #section-3 {
-  background-color: #fff;
+  background-color: black;
+  color: white;
 }
 
 
 
 /* hover header design */
 #section-1 {
-  /* position: relative; */
   height: 100vh;
-
+  max-height: 80rem;
+  min-height: 60rem;
   /* outline: 2px solid red; */
 }
 
 .side {
-  height: min(100vh, 100rem);
+  height: 100vh;
+  /* height: min(100vh, 100rem); */
   /* height: 70rem; */
   width: 100%;
 
